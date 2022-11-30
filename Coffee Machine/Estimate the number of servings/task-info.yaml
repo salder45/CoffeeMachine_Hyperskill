@@ -174,5 +174,29 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5661#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    Your output:
+    No, I can make only 3 cups of coffee
+    Right output:
+    Yes, I can make that amount of coffee (and even 2 more than that)
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    Write how many ml of water the coffee machine has:
+    &gt; 600
+    Write how many ml of milk the coffee machine has:
+    &gt; 153
+    Write how many grams of coffee beans the coffee machine has:
+    &gt; 100
+    Write how many cups of coffee you will need:
+    &gt; 1
+    No, I can make only 3 cups of coffee
+  time: "Wed, 30 Nov 2022 14:32:56 UTC"
 record: -1
