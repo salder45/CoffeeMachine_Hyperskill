@@ -10,6 +10,10 @@
       <module name="Coffee_Machine.Coffee_Machine-task-build-test-results.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task-build-tmp.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task.main" target="8" />
+      <module name="Coffee_Machine.Topics-When_expression-Just_checking.main" target="8" />
+      <module name="Coffee_Machine.Topics-When_expression-String_processor.main" target="8" />
+      <module name="Coffee_Machine.Topics-When_expression-The_number_of_digits.main" target="8" />
+      <module name="Coffee_Machine.Topics-When_expression-Theory.main" target="8" />
       <module name="Coffee_Machine.util.main" target="8" />
     </bytecodeTargetLevel>
   </component>
