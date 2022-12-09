@@ -12,17 +12,54 @@ const val CAPPUCCINO_WATER_PER_CUP: Int = 200
 const val CAPPUCCINO_MILK_PER_CUP: Int = 100
 const val CAPPUCCINO_COFFEE_PER_CUP: Int = 12
 const val CAPPUCCINO_PRICE: Int = 6
-
+const val INDEX_WATER = 1
+const val INDEX_MILK = 2
+const val INDEX_COFFEE = 3
+const val INDEX_CUP = 4
 
 fun main() {
+    var supplies = mutableListOf<Int>(0, 400, 540, 120, 9)
     var money: Int = 550
-    var water: Int = 400
-    var milk: Int = 540
-    var coffee: Int = 120
-    var cups: Int = 9
+    var keepRunning: Boolean = true
+    do {
+        println("Write action (buy, fill, take, remaining, exit)")
+        val selectedOption: String = readln()
+        when (selectedOption) {
+            "buy" -> {
+                println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:")
+                val input: String = readln()
+                if (input != "back") {
+                    when (input){
+                        "1" -> {
+                            money = buy(supplies, ESPRESSO_WATER_PER_CUP, ESPRESSO_MILK_PER_CUP, ESPRESSO_COFFEE_PER_CUP, money, ESPRESSO_PRICE)
+                        }
+                        "2" -> {
+                            money = buy(supplies, LATTE_WATER_PER_CUP, LATTE_MILK_PER_CUP, LATTE_COFFEE_PER_CUP, money, LATTE_PRICE)
+                        }
+                        "3" -> {
+                            money = buy(supplies, CAPPUCCINO_WATER_PER_CUP, CAPPUCCINO_MILK_PER_CUP, CAPPUCCINO_COFFEE_PER_CUP, money, CAPPUCCINO_PRICE)
+                        }
+                    }
+                }
+            }
+            "fill" -> {
+                fill("Write how many ml of water you want to add:", INDEX_WATER, supplies)
+                fill("Write how many ml of milk you want to add:", INDEX_MILK, supplies)
+                fill("Write how many grams of coffee beans you want to add:", INDEX_COFFEE, supplies)
+                fill("Write how many disposable cups you want to add:", INDEX_CUP, supplies)
+            }
+            "take" -> {
+                println("I gave you $$money")
+                money = subtract(money,money)
+            }
+            "remaining" -> printCoffeeMachineStatus(supplies, money)
+            "exit" -> keepRunning = false
+        }
+    } while (keepRunning)
+    /*
     printCoffeeMachineStatus(water,milk,coffee,cups,money)
-    println("Write action (buy, fill, take)")
-    val selectedOption: String = readln()
+
+
     when (selectedOption) {
          "buy" -> {
              println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
@@ -30,23 +67,23 @@ fun main() {
              when (optionCoffee) {
                  1 -> {
                      money = add(money, ESPRESSO_PRICE)
-                     water = substract(water, ESPRESSO_WATER_PER_CUP)
-                     milk = substract(milk, ESPRESSO_MILK_PER_CUP)
-                     coffee = substract(coffee, ESPRESSO_COFFEE_PER_CUP)
+                     water = subtract(water, ESPRESSO_WATER_PER_CUP)
+                     milk = subtract(milk, ESPRESSO_MILK_PER_CUP)
+                     coffee = subtract(coffee, ESPRESSO_COFFEE_PER_CUP)
                      cups--
                  }
                  2 -> {
                      money = add(money, LATTE_PRICE)
-                     water = substract(water, LATTE_WATER_PER_CUP)
-                     milk = substract(milk, LATTE_MILK_PER_CUP)
-                     coffee = substract(coffee, LATTE_COFFEE_PER_CUP)
+                     water = subtract(water, LATTE_WATER_PER_CUP)
+                     milk = subtract(milk, LATTE_MILK_PER_CUP)
+                     coffee = subtract(coffee, LATTE_COFFEE_PER_CUP)
                      cups--
                  }
                  3 -> {
                      money = add(money, CAPPUCCINO_PRICE)
-                     water = substract(water, CAPPUCCINO_WATER_PER_CUP)
-                     milk = substract(milk, CAPPUCCINO_MILK_PER_CUP)
-                     coffee = substract(coffee, CAPPUCCINO_COFFEE_PER_CUP)
+                     water = subtract(water, CAPPUCCINO_WATER_PER_CUP)
+                     milk = subtract(milk, CAPPUCCINO_MILK_PER_CUP)
+                     coffee = subtract(coffee, CAPPUCCINO_COFFEE_PER_CUP)
                      cups--
                  }
              }
@@ -67,10 +104,11 @@ fun main() {
         }
         "take" -> {
             println("I gave you $$money")
-            money = substract(money,money)
+            money = subtract(money,money)
         }
     }
     printCoffeeMachineStatus(water,milk,coffee,cups,money)
+    */
     /*
     println("Write how many ml of water the coffee machine has:")
     val availableWater: Int = readln().toInt()
@@ -102,12 +140,12 @@ fun main() {
     */
 }
 
-fun printCoffeeMachineStatus(water: Int, milk: Int, coffee: Int, cups: Int, money: Int) {
+fun printCoffeeMachineStatus(supplies: MutableList<Int>, money: Int) {
     println("The coffee machine has:")
-    println("$water ml of water")
-    println("$milk ml of milk")
-    println("$coffee g of coffee beans")
-    println("$cups disposable cups")
+    println("${supplies[INDEX_WATER]} ml of water")
+    println("${supplies[INDEX_MILK]} ml of milk")
+    println("${supplies[INDEX_COFFEE]} g of coffee beans")
+    println("${supplies[INDEX_CUP]} disposable cups")
     println("$$money of money")
 }
 
@@ -115,7 +153,34 @@ fun add(a: Int, b: Int) : Int {
     return a + b
 }
 
-fun substract(a: Int, b: Int) :Int {
+fun subtract(a: Int, b: Int) :Int {
     return a - b
+}
+
+fun fill(label: String, index: Int, supplies: MutableList<Int>) {
+    println(label)
+    val supply: Int = readln().toInt()
+    supplies[index] = add(supplies[index],supply)
+}
+
+fun buy(supplies: MutableList<Int>, water: Int, milk: Int, coffee: Int, money: Int, price: Int): Int {
+    var cash: Int = money
+    if (supplies[INDEX_WATER] - water < 0){
+        println("Sorry, not enough water!")
+    } else if (supplies[INDEX_MILK] - milk < 0) {
+        println("Sorry, not enough milk!")
+    } else if (supplies[INDEX_COFFEE] - coffee < 0) {
+        println("Sorry, not enough coffee beans!")
+    } else if (supplies[INDEX_CUP] - 1 < 0) {
+        println("Sorry, not enough disposable cups!")
+    } else {
+        println("I have enough resources, making you a coffee!")
+        supplies[INDEX_WATER] = subtract(supplies[INDEX_WATER],water)
+        supplies[INDEX_MILK] = subtract(supplies[INDEX_MILK],milk)
+        supplies[INDEX_COFFEE] = subtract(supplies[INDEX_COFFEE],coffee)
+        supplies[INDEX_CUP] = subtract(supplies[INDEX_CUP],1)
+        cash+= price
+    }
+    return cash
 }
 
