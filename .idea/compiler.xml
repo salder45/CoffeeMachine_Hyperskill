@@ -10,6 +10,7 @@
       <module name="Coffee_Machine.Coffee_Machine-task-build-test-results.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task-build-tmp.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task.main" target="8" />
+      <module name="Coffee_Machine.Topics-Declaring_classes-Area_printer.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-New_planet.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-Just_checking.main" target="8" />
