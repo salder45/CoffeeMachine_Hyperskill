@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":Topics-When_expression-String_processor:test" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/When expression/String processor" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Coffee Machine" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":Topics-Declaring_classes-Theory:test" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Coffee Machine" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
@@ -32,18 +32,18 @@
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.17.2/b13a7ea14b0e2f2f75ed64e2ce310e65a55694df/assertj-core-3.17.2.jar</arg>
               </args>
             </stringArg>
-            <stringArg name="destination" arg="$MODULE_DIR$/../../../../../Topics/When expression/String processor/build/classes/kotlin/test" />
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/build/classes/kotlin/test" />
             <stringArg name="jvmTarget" arg="1.8" />
-            <stringArg name="moduleName" arg="Topics-When_expression-String_processor" />
+            <stringArg name="moduleName" arg="Topics-Declaring_classes-Theory" />
             <stringArg name="apiVersion" arg="1.6" />
             <stringArg name="languageVersion" arg="1.6" />
           </stringArguments>
           <arrayArguments>
             <arrayArg name="friendPaths">
               <args>
-                <arg>$MODULE_DIR$/../../../../../Topics/When expression/String processor/build/classes/java/main</arg>
-                <arg>$MODULE_DIR$/../../../../../Topics/When expression/String processor/build/classes/kotlin/main</arg>
-                <arg>$MODULE_DIR$/../../../../../Topics/When expression/String processor/build/libs/Topics-When_expression-String_processor.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/build/classes/java/main</arg>
+                <arg>$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/build/classes/kotlin/main</arg>
+                <arg>$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/build/libs/Topics-Declaring_classes-Theory.jar</arg>
               </args>
             </arrayArg>
             <arrayArg name="pluginClasspaths">
@@ -63,13 +63,13 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../../../Topics/When expression/String processor/out/test/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/out/test/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../../Topics/When expression/String processor/src/test" />
-    <content url="file://$MODULE_DIR$/../../../../../Topics/When expression/String processor/test" />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/src/test" />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Declaring classes/Theory/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Coffee_Machine.Topics-When_expression-String_processor.main" />
+    <orderEntry type="module" module-name="Coffee_Machine.Topics-Declaring_classes-Theory.main" />
     <orderEntry type="module" module-name="Coffee_Machine.util.main" />
     <orderEntry type="module" module-name="Coffee_Machine.util.test" production-on-test="" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10" level="project" />
@@ -91,5 +91,5 @@
     <orderEntry type="library" name="Gradle: org.assertj:assertj-core:3.17.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.easytesting:fest-util:1.2.5" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Coffee_Machine.Topics-When_expression-String_processor.main" />
+  <component name="TestModuleProperties" production-module="Coffee_Machine.Topics-Declaring_classes-Theory.main" />
 </module>
