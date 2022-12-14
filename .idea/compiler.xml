@@ -13,6 +13,12 @@
       <module name="Coffee_Machine.Topics-Declaring_classes-Area_printer.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-New_planet.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Theory.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Example_of_functional_decomposition.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-How_to_improve_a_compound_program.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Items_of_functional_decomposition.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Some_exceptions.main" target="8" />
+      <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-Just_checking.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-String_processor.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-The_number_of_digits.main" target="8" />
