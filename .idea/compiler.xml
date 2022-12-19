@@ -21,6 +21,8 @@
       <module name="Coffee_Machine.Topics-Default_arguments-Print_Username.main" target="8" />
       <module name="Coffee_Machine.Topics-Default_arguments-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Enum-Currencies.main" target="8" />
+      <module name="Coffee_Machine.Topics-Enum-Days_of_the_week.main" target="8" />
+      <module name="Coffee_Machine.Topics-Enum-Properties_of_Enum.main" target="8" />
       <module name="Coffee_Machine.Topics-Enum-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Example_of_functional_decomposition.main" target="8" />
