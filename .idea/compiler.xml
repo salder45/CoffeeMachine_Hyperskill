@@ -10,6 +10,9 @@
       <module name="Coffee_Machine.Coffee_Machine-task-build-test-results.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task-build-tmp.main" target="8" />
       <module name="Coffee_Machine.Coffee_Machine-task.main" target="8" />
+      <module name="Coffee_Machine.Topics-Constructors-Implicit_constructor.main" target="8" />
+      <module name="Coffee_Machine.Topics-Constructors-Point2D.main" target="8" />
+      <module name="Coffee_Machine.Topics-Constructors-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Area_printer.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-New_planet.main" target="8" />
       <module name="Coffee_Machine.Topics-Declaring_classes-Theory.main" target="8" />
@@ -17,12 +20,18 @@
       <module name="Coffee_Machine.Topics-Default_arguments-Invocations.main" target="8" />
       <module name="Coffee_Machine.Topics-Default_arguments-Print_Username.main" target="8" />
       <module name="Coffee_Machine.Topics-Default_arguments-Theory.main" target="8" />
+      <module name="Coffee_Machine.Topics-Enum-Currencies.main" target="8" />
+      <module name="Coffee_Machine.Topics-Enum-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Create_a_full_name.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Example_of_functional_decomposition.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-How_to_improve_a_compound_program.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Items_of_functional_decomposition.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Some_exceptions.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="8" />
+      <module name="Coffee_Machine.Topics-Member_functions-Bugs_in_a_vinyl_store.main" target="8" />
+      <module name="Coffee_Machine.Topics-Member_functions-Patient_needs_a_doctor.main" target="8" />
+      <module name="Coffee_Machine.Topics-Member_functions-Theory.main" target="8" />
+      <module name="Coffee_Machine.Topics-Member_functions-Volume_of_a_cube.main" target="8" />
       <module name="Coffee_Machine.Topics-Named_arguments-Declarations.main" target="8" />
       <module name="Coffee_Machine.Topics-Named_arguments-Find_the_correct_invocations.main" target="8" />
       <module name="Coffee_Machine.Topics-Named_arguments-Perimeter.main" target="8" />
