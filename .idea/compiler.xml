@@ -39,6 +39,11 @@
       <module name="Coffee_Machine.Topics-Named_arguments-Perimeter.main" target="8" />
       <module name="Coffee_Machine.Topics-Named_arguments-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Named_arguments-URL.main" target="8" />
+      <module name="Coffee_Machine.Topics-Property_accessors-City_population.main" target="8" />
+      <module name="Coffee_Machine.Topics-Property_accessors-Correct_overriding.main" target="8" />
+      <module name="Coffee_Machine.Topics-Property_accessors-Field_access.main" target="8" />
+      <module name="Coffee_Machine.Topics-Property_accessors-Property_syntax.main" target="8" />
+      <module name="Coffee_Machine.Topics-Property_accessors-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-Just_checking.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-String_processor.main" target="8" />
       <module name="Coffee_Machine.Topics-When_expression-The_number_of_digits.main" target="8" />
