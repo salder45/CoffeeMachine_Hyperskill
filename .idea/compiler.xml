@@ -30,6 +30,10 @@
       <module name="Coffee_Machine.Topics-Functional_decomposition-Items_of_functional_decomposition.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Some_exceptions.main" target="8" />
       <module name="Coffee_Machine.Topics-Functional_decomposition-Theory.main" target="8" />
+      <module name="Coffee_Machine.Topics-Jumps_and_returns-Beyond_the_word.main" target="8" />
+      <module name="Coffee_Machine.Topics-Jumps_and_returns-Correct_jumping.main" target="8" />
+      <module name="Coffee_Machine.Topics-Jumps_and_returns-Placement_of_ships.main" target="8" />
+      <module name="Coffee_Machine.Topics-Jumps_and_returns-Theory.main" target="8" />
       <module name="Coffee_Machine.Topics-Member_functions-Bugs_in_a_vinyl_store.main" target="8" />
       <module name="Coffee_Machine.Topics-Member_functions-Patient_needs_a_doctor.main" target="8" />
       <module name="Coffee_Machine.Topics-Member_functions-Theory.main" target="8" />
